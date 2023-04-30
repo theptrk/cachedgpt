@@ -32,3 +32,8 @@ Example curl to get all completions
 ```
 curl "http://localhost:8001/chatCompletions"
 ```
+
+### Note: the default is sqlite in memory mode
+This means the data is NOT saved from each session.
+To save it, run `$ python init_db.py` to create the sqlite file,
+then uncomment the sqlite memory config
